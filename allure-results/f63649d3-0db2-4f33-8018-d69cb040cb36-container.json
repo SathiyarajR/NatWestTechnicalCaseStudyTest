@@ -1,0 +1,1 @@
+{"uuid":"f63649d3-0db2-4f33-8018-d69cb040cb36","name":"Exercise1.Test_2_Verify_Attributes","children":["6636b38f-9b57-4444-85b4-1e0f959338f5"],"befores":[{"name":"getResponse","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1657809657532,"stop":1657809660198}],"afters":[],"start":1657809657489,"stop":1657809660421}
