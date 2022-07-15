@@ -23,21 +23,6 @@ public class DataDrivenTestData extends Base {
         }
     }
 
-    // method to get rowcount
-//    @DataProvider(name = "getCount")
-//    public static int getRowCount() {
-//        int rowcount = sheet.getPhysicalNumberOfRows();
-//        return rowcount;
-//
-//    }
-//    @BeforeClass
-//    public static void main(String[] args) throws Exception {
-//        DataDrivenTestData excelURLPayload = new DataDrivenTestData(excelPath, sheetName);
-//        excelURLPayload.getCellData();
-
-
-//    }
-
     @DataProvider(name = "getURLInfo")
     public static Object[][] getCellData() throws NullPointerException {
 //        DataFormatter formatter = new DataFormatter();
@@ -59,18 +44,13 @@ public class DataDrivenTestData extends Base {
     }
 
 }
-//    @DataProvider(name = "getURIInfo")
-//    public static Object[][] getURL(String url) throws Exception {
-////        DataFormatter formatter = new DataFormatter();
-////        try {
-//        Object uri = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()].toString();
-//
-//        while (uri [][] != null) {
-//            return [];
-//        }
-//    }
-//}
 
+// method to get rowcount
+//    @DataProvider(name = "getCount")
+//    public static int getRowCount() {
+//        int rowcount = sheet.getPhysicalNumberOfRows();
+//        return rowcount;
+//
 
 
 
