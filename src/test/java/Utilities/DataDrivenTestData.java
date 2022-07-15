@@ -3,9 +3,8 @@ package Utilities;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
+
 import java.io.IOException;
-
-
 
 
 public class DataDrivenTestData extends Base {
@@ -30,21 +29,24 @@ public class DataDrivenTestData extends Base {
     }
 
 
-    public static Object[][] getCellData() {
+    @DataProvider(name = "getURLInfo")
+    public static Object[][] getCellData() throws Exception {
 //        DataFormatter formatter = new DataFormatter();
+
         Object[][] value = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-        for (int i = 1; i < sheet.getLastRowNum(); i++)
-        {
+
+        for (int i = 1; i < sheet.getLastRowNum(); i++) {
             for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++) {
                 value[i][j] = sheet.getRow(i + 1).getCell(j).toString();
-            System.out.println(value[i] [j]);
+//                System.out.println(value[i][j]);
+
             }
         }
         return value;
+
     }
-
-
 }
+
 
 
 

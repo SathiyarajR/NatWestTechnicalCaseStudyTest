@@ -4,12 +4,13 @@ import Utilities.Base;
 import Utilities.DataDrivenTestData;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static Utilities.constants.*;
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.given;
 
 public class Test_3_Verify_API_Responses extends Base {
-
-
 
 
     @Test
@@ -28,7 +29,7 @@ public class Test_3_Verify_API_Responses extends Base {
 
     }
 
-    
+
     @Test
     void testResponseCode400() {
         given()
@@ -37,16 +38,23 @@ public class Test_3_Verify_API_Responses extends Base {
 
     }
 
-    @Test(dataProvider = "getUrlData")
-    void testParameterization(String url)
-    {
-        given().pathParam("URL",url)
-                .get("https://swapi.dev/api/{URL}/")
-                .then().statusCode(RESPONSE_CODE_200);
 
+    @Test(dataProvider = "getURLInfo",dataProviderClass = DataDrivenTestData.class)
+    void testParameterization(String baseURI, String uri) {
+        try {
+            Map<String, Object > req= new HashMap<String, Object>();
+            req.put("URL",baseURI);
+            req.put("URI",uri);
+            given().pathParams(baseURI,uri)
+                    .get("{baseURI}/{URL}/")
+                    .then().statusCode(RESPONSE_CODE_200);
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-
-
-
-
 }
+
+
+
