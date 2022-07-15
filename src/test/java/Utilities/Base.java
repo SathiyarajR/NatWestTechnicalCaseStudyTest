@@ -9,13 +9,14 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
+import static Utilities.constants.excelPath;
+import static Utilities.constants.sheetName;
+
 public class Base {
     public static RequestSpecification request;
     public static ResponseBody response;
     public static Headers headers;
-    static XSSFWorkbook workbook;
-    static XSSFSheet sheet;
-
-
+    public static XSSFWorkbook workbook;
+    public static XSSFSheet sheet;
 
 }

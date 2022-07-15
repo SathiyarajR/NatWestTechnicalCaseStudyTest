@@ -11,9 +11,13 @@ import static Utilities.constants.*;
 import static io.restassured.RestAssured.given;
 
 public class Test_3_Verify_API_Responses extends Base {
+    DataDrivenTestData excelURLPayload = new DataDrivenTestData(excelPath, sheetName);
 
 
-    @Test
+
+
+
+        @Test
     void testResponseCode200() {
         given()
                 .get("https://swapi.dev/api/planets/34/")
@@ -30,17 +34,19 @@ public class Test_3_Verify_API_Responses extends Base {
     }
 
 
-    @Test
-    void testResponseCode400() {
+    @Test(dataProvider = "getURLInfo",dataProviderClass = DataDrivenTestData.class)
+    void testResponseCode400(String URL, String uri) {
         given()
-                .get("https://swapi.dev/api/planets/3/")
+                .pathParam("URL",uri)
+                .pathParam("URI",uri)
+                .get("https://swapi.dev/api/{uri}/")
                 .then().statusCode(RESPONSE_CODE_400);
 
     }
 
 
     @Test(dataProvider = "getURLInfo",dataProviderClass = DataDrivenTestData.class)
-    void testParameterization(String baseURI, String uri) {
+    public void testParameterization(String baseURI, String uri) {
         try {
             Map<String, Object > req= new HashMap<String, Object>();
             req.put("URL",baseURI);
@@ -50,7 +56,7 @@ public class Test_3_Verify_API_Responses extends Base {
                     .then().statusCode(RESPONSE_CODE_200);
 
 
-        } catch (Exception e) {
+        } catch (NullPointerException e) {
             e.printStackTrace();
         }
     }
