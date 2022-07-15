@@ -1,0 +1,1 @@
+{"uuid":"294e033b-dd74-4cb2-b4f6-3df94fc37712","name":"Exercise1.Test_3_Verify_API_Responses","children":["948b67d8-ef66-46c3-93e1-63deb4d1cefa"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1657893470235,"stop":1657893470532}],"afters":[],"start":1657893470186,"stop":1657893470736}

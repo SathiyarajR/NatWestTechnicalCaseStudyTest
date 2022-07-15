@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="2" name="TestSuite" time="41.882" errors="0" skipped="0">
+<testsuite tests="69" failures="0" name="TestSuite" time="74.763" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1.1+2-6"/>
@@ -59,96 +59,73 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsJSON" time="2.372"/>
-  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="2.94"/>
-  <testcase classname="Exercise1.Test_2_Verify_Attributes" name="DisplayAllStarWarsCharacterNames" time="11.978"/>
-  <testcase classname="Exercise1.Test_2_Verify_Attributes" name="GetCountOfStarWarsCharacters" time="9.278"/>
-  <testcase classname="Exercise1.Test_2_Verify_Attributes" name="ValidateSpecificStarWarsCharacterNames" time="6.248"/>
-  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testParameterization" time="6.355">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;Utilities.DataDrivenTestData.sheet&quot; is null" type="java.lang.RuntimeException">java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;Utilities.DataDrivenTestData.sheet&quot; is null
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;Utilities.DataDrivenTestData.sheet&quot; is null
-	at Utilities.DataDrivenTestData.getCellData(DataDrivenTestData.java:36)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-	... 33 more
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;Utilities.DataDrivenTestData.sheet&quot; is null
-	at Utilities.DataDrivenTestData.getCellData(DataDrivenTestData.java:36)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-	... 33 more
-</failure>
-  </testcase>
-  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="0.934"/>
-  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="0.946">
-    <failure message="1 expectation failed.
-Expected status code &lt;400&gt; but was &lt;200&gt;.
-" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;400&gt; but was &lt;200&gt;.
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$2.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at Exercise1.Test_3_Verify_API_Responses.testResponseCode400(Test_3_Verify_API_Responses.java:37)
-</failure>
-  </testcase>
-  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.831"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="5.095"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="0.8"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="1.065"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="1.171"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="1.521"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="1.805"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="0.774"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="0.898"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="1.042"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="1.136"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="TestToDisplayHeaders" time="0.881"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="0.881"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="1.162"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="0.83"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="1.013"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="1.145"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="1.25"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="0.999"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="0.892"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="0.82"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="0.832"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsApplicationJSON" time="0.823"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="0.784"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="1.713"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="1.029"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="1.029"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="0.817"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="1.351"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="0.762"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="0.843"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="0.822"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="0.984"/>
+  <testcase classname="Exercise1.Test_1_Validate_Headers" name="VerifyContentTypeIsPresent" time="1.361"/>
+  <testcase classname="Exercise1.Test_2_Verify_Attributes" name="DisplayAllStarWarsCharacterNames" time="3.769"/>
+  <testcase classname="Exercise1.Test_2_Verify_Attributes" name="GetCountOfStarWarsCharacters" time="0.994"/>
+  <testcase classname="Exercise1.Test_2_Verify_Attributes" name="ValidateSpecificStarWarsCharacterNames" time="1.074"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="1.019"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="1.216"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="1.246"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="1.045"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="0.804"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="1.596"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="1.015"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="0.885"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="0.799"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="0.865"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode200" time="0.805"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="0.879"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="1.037"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="0.856"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="1"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="0.899"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="0.896"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="0.787"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="0.829"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="0.791"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="1.412"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode400" time="1.017"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.768"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.772"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.821"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.796"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.856"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.796"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.992"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.759"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.801"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.764"/>
+  <testcase classname="Exercise1.Test_3_Verify_API_Responses" name="testResponseCode404" time="0.773"/>
 </testsuite>

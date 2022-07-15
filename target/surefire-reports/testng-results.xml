@@ -1,178 +1,2071 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+<testng-results ignored="0" total="69" passed="69" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-15T13:00:28 IST" name="Command line suite" finished-at="2022-07-15T13:01:20 IST" duration-ms="51942">
+  <suite started-at="2022-07-15T22:24:56 IST" name="Command line suite" finished-at="2022-07-15T22:26:11 IST" duration-ms="75011">
     <groups>
     </groups>
-    <test started-at="2022-07-15T13:00:28 IST" name="Command line test" finished-at="2022-07-15T13:01:20 IST" duration-ms="51942">
+    <test started-at="2022-07-15T22:24:56 IST" name="Command line test" finished-at="2022-07-15T22:26:11 IST" duration-ms="75011">
       <class name="Exercise1.Test_2_Verify_Attributes">
-        <test-method is-config="true" signature="getResponse()[pri:0, instance:Exercise1.Test_2_Verify_Attributes@dd0c991]" started-at="2022-07-15T13:00:40 IST" name="getResponse" finished-at="2022-07-15T13:00:50 IST" duration-ms="9778" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResponse -->
-        <test-method signature="DisplayAllStarWarsCharacterNames()[pri:0, instance:Exercise1.Test_2_Verify_Attributes@dd0c991]" started-at="2022-07-15T13:00:50 IST" name="DisplayAllStarWarsCharacterNames" finished-at="2022-07-15T13:01:02 IST" duration-ms="11971" status="PASS">
+        <test-method signature="DisplayAllStarWarsCharacterNames()[pri:0, instance:Exercise1.Test_2_Verify_Attributes@2ece4966]" started-at="2022-07-15T22:25:34 IST" name="DisplayAllStarWarsCharacterNames" finished-at="2022-07-15T22:25:38 IST" duration-ms="3765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DisplayAllStarWarsCharacterNames -->
-        <test-method signature="GetCountOfStarWarsCharacters()[pri:0, instance:Exercise1.Test_2_Verify_Attributes@dd0c991]" started-at="2022-07-15T13:01:02 IST" name="GetCountOfStarWarsCharacters" finished-at="2022-07-15T13:01:11 IST" duration-ms="9122" status="PASS">
+        <test-method signature="GetCountOfStarWarsCharacters()[pri:0, instance:Exercise1.Test_2_Verify_Attributes@2ece4966]" started-at="2022-07-15T22:25:38 IST" name="GetCountOfStarWarsCharacters" finished-at="2022-07-15T22:25:39 IST" duration-ms="992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetCountOfStarWarsCharacters -->
-        <test-method signature="ValidateSpecificStarWarsCharacterNames()[pri:0, instance:Exercise1.Test_2_Verify_Attributes@dd0c991]" started-at="2022-07-15T13:01:11 IST" name="ValidateSpecificStarWarsCharacterNames" finished-at="2022-07-15T13:01:17 IST" duration-ms="5703" status="PASS">
+        <test-method signature="ValidateSpecificStarWarsCharacterNames()[pri:0, instance:Exercise1.Test_2_Verify_Attributes@2ece4966]" started-at="2022-07-15T22:25:39 IST" name="ValidateSpecificStarWarsCharacterNames" finished-at="2022-07-15T22:25:40 IST" duration-ms="1072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateSpecificStarWarsCharacterNames -->
       </class> <!-- Exercise1.Test_2_Verify_Attributes -->
       <class name="Exercise1.Test_3_Verify_API_Responses">
-        <test-method signature="testParameterization(java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@5f16132a]" started-at="2022-07-15T13:01:18 IST" name="testParameterization" data-provider="getURLInfo" finished-at="2022-07-15T13:01:18 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()" because "Utilities.DataDrivenTestData.sheet" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()" because "Utilities.DataDrivenTestData.sheet" is null
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()" because "Utilities.DataDrivenTestData.sheet" is null
-at Utilities.DataDrivenTestData.getCellData(DataDrivenTestData.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-... 33 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testParameterization -->
-        <test-method signature="testResponseCode200()[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@5f16132a]" started-at="2022-07-15T13:01:18 IST" name="testResponseCode200" finished-at="2022-07-15T13:01:19 IST" duration-ms="921" status="PASS">
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:40 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:41 IST" duration-ms="1017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people/1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[peo1ple/1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/:]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponseCode200 -->
-        <test-method signature="testResponseCode400()[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@5f16132a]" started-at="2022-07-15T13:01:19 IST" name="testResponseCode400" finished-at="2022-07-15T13:01:20 IST" duration-ms="931" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <400> but was <200>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <200>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$2.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at Exercise1.Test_3_Verify_API_Responses.testResponseCode400(Test_3_Verify_API_Responses.java:37)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:41 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:42 IST" duration-ms="1213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[p3eople?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:42 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:44 IST" duration-ms="1234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets/3/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pl4anets/3/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:44 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:45 IST" duration-ms="1018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pla4nets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:45 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:45 IST" duration-ms="822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films/6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fi6lms/6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:45 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:47 IST" duration-ms="1596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films?search=count]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[f2ilms?search=count]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:47 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:48 IST" duration-ms="1006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species/23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[spegcies/23]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:48 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:49 IST" duration-ms="845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species?language]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[specuies?language]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:49 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:50 IST" duration-ms="784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vehi3cles/14]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:50 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:51 IST" duration-ms="830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[veh9icles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode200(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:51 IST" name="testResponseCode200" data-provider="getURLInfo" finished-at="2022-07-15T22:25:51 IST" duration-ms="798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[starships/9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[s6arships/9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode200 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:51 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:25:52 IST" duration-ms="872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people/1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[peo1ple/1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/:]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponseCode400 -->
-        <test-method signature="testResponseCode404()[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@5f16132a]" started-at="2022-07-15T13:01:20 IST" name="testResponseCode404" finished-at="2022-07-15T13:01:20 IST" duration-ms="824" status="PASS">
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:52 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:25:53 IST" duration-ms="1032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[p3eople?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:53 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:25:54 IST" duration-ms="850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets/3/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pl4anets/3/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:54 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:25:55 IST" duration-ms="993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pla4nets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:55 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:25:56 IST" duration-ms="895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films/6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fi6lms/6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:56 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:25:57 IST" duration-ms="848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films?search=count]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[f2ilms?search=count]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:57 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:25:58 IST" duration-ms="780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species/23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[spegcies/23]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:58 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:25:59 IST" duration-ms="826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species?language]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[specuies?language]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:59 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:25:59 IST" duration-ms="785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vehi3cles/14]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:25:59 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:26:01 IST" duration-ms="1407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[veh9icles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode400(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:01 IST" name="testResponseCode400" data-provider="getURLInfo" finished-at="2022-07-15T22:26:02 IST" duration-ms="1014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[starships/9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[s6arships/9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode400 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:02 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:03 IST" duration-ms="764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people/1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[peo1ple/1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/:]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:03 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:03 IST" duration-ms="766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[p3eople?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:03 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:04 IST" duration-ms="818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets/3/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pl4anets/3/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:04 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:05 IST" duration-ms="792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pla4nets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:05 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:06 IST" duration-ms="852" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films/6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fi6lms/6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:06 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:07 IST" duration-ms="786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films?search=count]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[f2ilms?search=count]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:07 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:08 IST" duration-ms="988" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species/23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[spegcies/23]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:08 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:08 IST" duration-ms="753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species?language]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[specuies?language]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:08 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:09 IST" duration-ms="798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vehi3cles/14]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:09 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:10 IST" duration-ms="761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[veh9icles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode404 -->
+        <test-method signature="testResponseCode404(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_3_Verify_API_Responses@1dd0e7c4]" started-at="2022-07-15T22:26:10 IST" name="testResponseCode404" data-provider="getURLInfo" finished-at="2022-07-15T22:26:11 IST" duration-ms="767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[starships/9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[s6arships/9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponseCode404 -->
       </class> <!-- Exercise1.Test_3_Verify_API_Responses -->
       <class name="Exercise1.Test_1_Validate_Headers">
-        <test-method is-config="true" signature="getResponse()[pri:0, instance:Exercise1.Test_1_Validate_Headers@ba54932]" started-at="2022-07-15T13:00:29 IST" name="getResponse" finished-at="2022-07-15T13:00:35 IST" duration-ms="6417" status="PASS">
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:24:56 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:01 IST" duration-ms="4899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people/1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[peo1ple/1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/:]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getResponse -->
-        <test-method signature="VerifyContentTypeIsJSON()[pri:0, instance:Exercise1.Test_1_Validate_Headers@ba54932]" started-at="2022-07-15T13:00:35 IST" name="VerifyContentTypeIsJSON" finished-at="2022-07-15T13:00:37 IST" duration-ms="2217" status="PASS">
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:01 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:02 IST" duration-ms="799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[p3eople?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyContentTypeIsJSON -->
-        <test-method signature="VerifyContentTypeIsPresent()[pri:0, instance:Exercise1.Test_1_Validate_Headers@ba54932]" started-at="2022-07-15T13:00:37 IST" name="VerifyContentTypeIsPresent" finished-at="2022-07-15T13:00:40 IST" duration-ms="2932" status="PASS">
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:02 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:03 IST" duration-ms="1062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets/3/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pl4anets/3/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:03 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:04 IST" duration-ms="1162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pla4nets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:04 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:05 IST" duration-ms="1452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films/6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fi6lms/6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:05 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:07 IST" duration-ms="1803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films?search=count]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[f2ilms?search=count]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:07 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:08 IST" duration-ms="766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species/23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[spegcies/23]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:08 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:09 IST" duration-ms="874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species?language]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[specuies?language]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:09 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:10 IST" duration-ms="1040" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vehi3cles/14]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:10 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:11 IST" duration-ms="1099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[veh9icles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="TestToDisplayHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:11 IST" name="TestToDisplayHeaders" data-provider="getURLInfo" finished-at="2022-07-15T22:25:12 IST" duration-ms="874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[starships/9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[s6arships/9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestToDisplayHeaders -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:12 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:13 IST" duration-ms="873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people/1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[peo1ple/1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/:]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:13 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:14 IST" duration-ms="1158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[p3eople?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:14 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:15 IST" duration-ms="829" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets/3/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pl4anets/3/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:15 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:16 IST" duration-ms="1011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pla4nets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:16 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:17 IST" duration-ms="1144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films/6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fi6lms/6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:17 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:18 IST" duration-ms="1247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films?search=count]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[f2ilms?search=count]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:18 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:19 IST" duration-ms="995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species/23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[spegcies/23]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:19 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:20 IST" duration-ms="880" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species?language]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[specuies?language]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:20 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:21 IST" duration-ms="814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vehi3cles/14]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:21 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:22 IST" duration-ms="829" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[veh9icles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsApplicationJSON(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:22 IST" name="VerifyContentTypeIsApplicationJSON" data-provider="getURLInfo" finished-at="2022-07-15T22:25:23 IST" duration-ms="812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[starships/9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[s6arships/9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsApplicationJSON -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:23 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:24 IST" duration-ms="778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people/1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[peo1ple/1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/:]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:24 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:25 IST" duration-ms="1705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[people?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[p3eople?search=Luke Skywalker]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:25 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:26 IST" duration-ms="1018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets/3/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pl4anets/3/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:26 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:27 IST" duration-ms="1027" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[planets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pla4nets?search=Tatooine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:27 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:28 IST" duration-ms="807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films/6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fi6lms/6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:28 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:29 IST" duration-ms="1339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[films?search=count]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[f2ilms?search=count]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:29 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:30 IST" duration-ms="757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species/23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[spegcies/23]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:30 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:31 IST" duration-ms="836" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[species?language]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[specuies?language]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:31 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:32 IST" duration-ms="814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vehi3cles/14]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:32 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:33 IST" duration-ms="979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vehicles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[veh9icles/?name=Snowspeeder]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContentTypeIsPresent -->
+        <test-method signature="VerifyContentTypeIsPresent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Exercise1.Test_1_Validate_Headers@1e63ec0b]" started-at="2022-07-15T22:25:33 IST" name="VerifyContentTypeIsPresent" data-provider="getURLInfo" finished-at="2022-07-15T22:25:34 IST" duration-ms="1355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://swapi.dev/api/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[starships/9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[s6arships/9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://swapi.dev/api/%]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyContentTypeIsPresent -->

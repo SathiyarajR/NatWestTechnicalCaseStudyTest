@@ -1,6 +1,7 @@
 Exercise1\Test_1_Validate_Headers.class
+Utilities\constants.class
+hooks\hooks.class
 Utilities\Base.class
 Exercise1\Test_3_Verify_API_Responses.class
 Utilities\DataDrivenTestData.class
-Utilities\constants.class
 Exercise1\Test_2_Verify_Attributes.class
