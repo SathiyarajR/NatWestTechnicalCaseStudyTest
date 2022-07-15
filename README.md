@@ -6,6 +6,11 @@ SWAPI  -  The Star Wars API Test Wrap
 
 2. Jenkins Build Configuration File
 
+   Steps to run the Build using Jenkins
+      1. Navigate to Jenkins Path and run Below command e.g. C:\Program Files\Jenkins>java -jar jenkins.war --enable-future-java
+      2. Check the Job in http://localhost:8080/job/TestNatWestCaseStudy/
+      3. Configure/Run and validate test results in console
+
 3. Reporting DashBoard
 
   Integrated with Allure 
@@ -38,6 +43,7 @@ Report generation Command
 allure serve /home/path/to/project/target/surefire-reports/
 
 4. Deployment - Using Teamcity
+   Regression suite can be added to Pipeline to Build and Deploy in respective Environments.
 
 
 
