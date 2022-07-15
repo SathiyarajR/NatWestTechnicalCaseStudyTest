@@ -2,7 +2,8 @@ NatWestTechnicalCaseStudyTest
 
 Exercise 1:  SWAPI - The Star Wars API Test Wrap - Data Driven Test Framework
 
-1. Test Environment  - Mention the environment details here
+
+1. Test Tools & Environment  - Implemented using Rest Assured Java Libraries integrated with TestNG.
 
 2. CICD - Build & Test Automation Using Jenkins
 
