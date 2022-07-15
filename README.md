@@ -1,12 +1,12 @@
 NatWestTechnicalCaseStudyTest
 
-Exercise 1:  SWAPI - The Star Wars API Test Wrap - Data Driven Test Framkework
+Exercise 1:  SWAPI - The Star Wars API Test Wrap - Data Driven Test Framework
 
 1. Test Environment  - Mention the environment details here
 
-2. Jenkins Build Configuration File
+2. CICD - Build & Test Automation Using Jenkins
 
-        Steps to run the Build using Jenkins
+        Steps to run the Build using Jenkins e.g. or can be
 
         Navigate to Jenkins Path and run Below command e.g. C:\Program Files\Jenkins>java -jar jenkins.war --enable-future-java
 
@@ -36,7 +36,7 @@ Exercise 1:  SWAPI - The Star Wars API Test Wrap - Data Driven Test Framkework
 		
 		-> Report generation Command from command prompt:  allure serve /home/path/to/project/target/surefire-reports/
 
-4. Deployment - Using Teamcity Regression suite can be added to Pipeline to Build and Deploy in respective Environments.
+4. Deployment - Can be integrated with Teamcity Or Octopus Pipeline to Build and Deploy in respective Environments.
 
 
 Exercise 2: Program written to determine the number of files that start with T or end in S starting from root. Assume small.dat is provided with all different files. 
